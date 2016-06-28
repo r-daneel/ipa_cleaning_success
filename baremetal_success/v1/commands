@@ -4,6 +4,26 @@
             "command_error": null,
             "command_name": "get_clean_steps",
             "command_params": {
+                "node": {
+                    "chassis_id": null,
+                    "clean_step": {},
+                    "conductor_affinity": 2,
+                    "console_enabled": false,
+                    "created_at": "2015-09-29T20:57:39.000000",
+                    "driver": "ngac_v2",
+                    "driver_info": {
+                    },
+                    "driver_internal_info": {
+                        "agent_last_heartbeat": 1444846821,
+                        "agent_url": "",
+                        "clean_steps": null,
+                        "hardware_manager_version": {
+                            "generic_hardware_manager": "1.0"
+                        },
+                        "is_whole_disk_image": true
+                    },
+                    "extra": {
+                    },
             },
             "command_result": {
                 "clean_steps": {
@@ -29,6 +49,46 @@
             "command_params": {
                 "clean_version": {
                     "generic_hardware_manager": "1.0"
+                },
+                "node": {
+                    "chassis_id": null,
+                    "clean_step": {
+                        "interface": "deploy",
+                        "priority": 10,
+                        "reboot_requested": false,
+                        "step": "erase_devices"
+                    },
+                    "conductor_affinity": 2,
+                    "console_enabled": false,
+                    "created_at": "2015-09-29T20:57:39.000000",
+                    "driver": "ngac_v2",
+                    "driver_info": {
+                    },
+                    "driver_internal_info": {
+                        "agent_last_heartbeat": 1444846821,
+                        "agent_url": "",
+                        "clean_steps": [
+                            {
+                                "interface": "deploy",
+                                "priority": 10,
+                                "reboot_requested": false,
+                                "step": "erase_devices"
+                            }
+                        ],
+                        "hardware_manager_version": {
+                            "generic_hardware_manager": "1.0"
+                        },
+                        "is_whole_disk_image": true
+                    },
+                    "extra": {
+                    },
+                    "provision_state": "cleaning",
+                    "provision_updated_at": "2015-10-14T18:17:55.000000",
+                    "reservation": "and_then",
+                    "target_power_state": null,
+                    "target_provision_state": "available",
+                    "updated_at": "2015-10-14T18:20:21.000000",
+                    "uuid": "a44b59eb-74ce-4cb4-af05-6604ca1047be"
                 },
                 "step": {
                     "interface": "deploy",
